@@ -1,0 +1,208 @@
+import type { Attraction } from './types';
+
+export const attractions: Attraction[] = [
+  {
+    slug: 'serengeti-national-park',
+    name: 'Serengeti National Park',
+    region: 'Northern Tanzania',
+    tagline: 'The endless plains and the great migration',
+    description:
+      "Tanzania's oldest and most famous park — 14,750 km² of savanna that hosts the great migration, the largest overland movement of animals on earth. Big cats, river crossings, and horizon-to-horizon herds make the Serengeti the soul of an African safari.",
+    image: 'https://images.pexels.com/photos/5574041/pexels-photo-5574041.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    facts: [
+      { label: 'Area', value: '14,750 km²' },
+      { label: 'Founded', value: '1951' },
+      { label: 'Wildlife', value: 'Big Five + 500+ bird species' },
+      { label: 'Highlight', value: 'Great migration (Jun–Oct)' },
+    ],
+    highlights: ['Great migration river crossings', 'Big cat predators', 'Hot air balloon safaris', 'Bush breakfast on the plains'],
+    bestTime: 'June – October for the migration; January – February for calving season',
+  },
+  {
+    slug: 'ngorongoro-crater',
+    name: 'Ngorongoro Crater',
+    region: 'Northern Tanzania',
+    tagline: "The world's largest intact volcanic caldera",
+    description:
+      "A UNESCO World Heritage Site, the Ngorongoro Crater is a 260 km² natural amphitheatre home to roughly 25,000 large animals. The crater floor is one of the most reliable places on the continent to see the full Big Five in a single day.",
+    image: 'https://images.pexels.com/photos/20847562/pexels-photo-20847562.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    facts: [
+      { label: 'Diameter', value: '19 km' },
+      { label: 'Depth', value: '610 m' },
+      { label: 'Wildlife', value: '~25,000 animals' },
+      { label: 'Highlight', value: 'Dense Big Five density' },
+    ],
+    highlights: ['Full Big Five on the crater floor', 'Lake Magadi flamingos', 'Endangered black rhino', 'Maasai pastoralists on the highlands'],
+    bestTime: 'All year — dry season (Jun–Oct) gives the clearest views',
+  },
+  {
+    slug: 'mount-kilimanjaro',
+    name: 'Mount Kilimanjaro',
+    region: 'Northern Tanzania',
+    tagline: 'The roof of Africa — 5,895 m',
+    description:
+      "Africa's highest peak and the world's tallest free-standing mountain. Seven established routes climb through five climate zones — rainforest, heather, moorland, alpine desert, and arctic summit — to Uhuru Peak.",
+    image: 'https://images.pexels.com/photos/5109704/pexels-photo-5109704.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    facts: [
+      { label: 'Elevation', value: '5,895 m' },
+      { label: 'Routes', value: '7 (Machame most popular)' },
+      { label: 'Success', value: '~85% on 7-day routes' },
+      { label: 'Highlight', value: 'Uhuru Peak summit' },
+    ],
+    highlights: ['Uhuru Peak at sunrise', 'Five climate zones', 'Glacial valleys & Mawenzi', 'Summit certificate'],
+    bestTime: 'January – March and June – October',
+  },
+  {
+    slug: 'tarangire-national-park',
+    name: 'Tarangire National Park',
+    region: 'Northern Tanzania',
+    tagline: 'Baobabs and the largest elephant herds in the north',
+    description:
+      'Tarangire is defined by ancient baobab trees and the Tarangire River, which draws massive herds of elephants and buffalo in the dry season. It is a quieter, more intimate park than the Serengeti with exceptional birding.',
+    image: 'https://images.pexels.com/photos/28359728/pexels-photo-28359728.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    facts: [
+      { label: 'Area', value: '2,850 km²' },
+      { label: 'Elephants', value: 'Large herds in dry season' },
+      { label: 'Birds', value: '550+ species' },
+      { label: 'Icon', value: 'Ancient baobab trees' },
+    ],
+    highlights: ['Elephant herds among baobabs', 'Tree-climbing lions', 'Dry-season river gatherings', 'Superb bird watching'],
+    bestTime: 'June – October when wildlife concentrates at the river',
+  },
+  {
+    slug: 'lake-manyara-national-park',
+    name: 'Lake Manyara National Park',
+    region: 'Northern Tanzania',
+    tagline: 'Flamingo-pink shores and tree-climbing lions',
+    description:
+      'A compact park stretching along the alkaline Lake Manyara beneath the Rift Valley escarpment. Famous for its pink flamingo fringe, tree-climbing lions, and large troops of baboons in the groundwater forest.',
+    image: 'https://images.pexels.com/photos/12573131/pexels-photo-12573131.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    facts: [
+      { label: 'Area', value: '330 km²' },
+      { label: 'Lake', value: 'Alkaline, seasonal' },
+      { label: 'Specialty', value: 'Tree-climbing lions' },
+      { label: 'Birds', value: 'Flamingos & pelicans' },
+    ],
+    highlights: ['Flamingo colonies on the lake', 'Tree-climbing lions', 'Rift Valley escarpment views', 'Groundwater forest walks'],
+    bestTime: 'June – October; flamingos peak November – March',
+  },
+  {
+    slug: 'selous-game-reserve',
+    name: 'Selous Game Reserve',
+    region: 'Southern Tanzania',
+    tagline: "Africa's largest protected area — wild and remote",
+    description:
+      'Now partly the Nyerere National Park, Selous is a vast 50,000 km² wilderness of miombo woodland, lakes and the Rufiji River. Boat and walking safaris set it apart from the northern parks, and the wildlife is spectacularly untouched.',
+    image: 'https://images.pexels.com/photos/5574045/pexels-photo-5574045.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    facts: [
+      { label: 'Area', value: '~50,000 km²' },
+      { label: 'Rivers', value: 'Rufiji & tributaries' },
+      { label: 'Wildlife', value: 'Wild dog, hippo, buffalo' },
+      { label: 'Safari style', value: 'Boat + walking' },
+    ],
+    highlights: ['Boat safaris on the Rufiji', 'Walking safaris', 'African wild dog packs', 'Fly-in to remote airstrips'],
+    bestTime: 'June – October (dry); closed April – May',
+  },
+  {
+    slug: 'ruaha-national-park',
+    name: 'Ruaha National Park',
+    region: 'Southern Tanzania',
+    tagline: "Tanzania's biggest park — predators and baobabs",
+    description:
+      "Tanzania's largest national park at 20,226 km², Ruaha is rugged, dry, and dramatic. It holds one of Africa's largest elephant populations and roughly 10% of the world's lions, yet sees remarkably few visitors.",
+    image: 'https://images.pexels.com/photos/15341664/pexels-photo-15341664.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    facts: [
+      { label: 'Area', value: '20,226 km²' },
+      { label: 'Elephants', value: '~10,000' },
+      { label: 'Lions', value: '~10% of world population' },
+      { label: 'Rivers', value: 'Great Ruaha' },
+    ],
+    highlights: ['Large predator density', 'Huge elephant herds', 'Great Ruaha River', 'Remote, uncrowded game drives'],
+    bestTime: 'June – October for wildlife; birding peaks Nov – March',
+  },
+  {
+    slug: 'zanzibar-archipelago',
+    name: 'Zanzibar Archipelago',
+    region: 'Indian Ocean coast',
+    tagline: 'Spice island beaches and historic Stone Town',
+    description:
+      "Zanzibar is a tropical archipelago off Tanzania's coast — white-sand beaches, coral reefs, and the UNESCO-listed Stone Town with its carved doors, spice markets, and Swahili-Arab heritage. The perfect finale after a safari.",
+    image: 'https://images.pexels.com/photos/8723118/pexels-photo-8723118.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    facts: [
+      { label: 'Islands', value: 'Unguja, Pemba + islets' },
+      { label: 'Beaches', value: 'Nungwi, Kendwa, Paje' },
+      { label: 'Heritage', value: 'Stone Town UNESCO' },
+      { label: 'Water', value: 'Mnemba snorkeling' },
+    ],
+    highlights: ['Nungwi & Kendwa beaches', 'Stone Town alleys & doors', 'Mnemba Atoll snorkeling', 'Spice farm tours', 'Sunset dhow cruises'],
+    bestTime: 'June – October and December – February',
+  },
+  {
+    slug: 'stone-town',
+    name: 'Stone Town',
+    region: 'Zanzibar',
+    tagline: 'A Swahili trading town carved in coral stone',
+    description:
+      "The historic heart of Zanzibar City — a maze of narrow alleys, ornate carved doors, bustling bazaars, and the former slave market. Stone Town is a living museum of Swahili, Arab, Persian, Indian and European influence.",
+    image: 'https://images.pexels.com/photos/19129403/pexels-photo-19129403.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    facts: [
+      { label: 'Status', value: 'UNESCO World Heritage' },
+      { label: 'Icon', value: 'Carved doors' },
+      { label: 'Markets', value: 'Forodhani night market' },
+      { label: 'History', value: 'Spice & slave trade hub' },
+    ],
+    highlights: ['Carved Zanzibari doors', 'Forodhani Gardens night market', 'Old Fort & House of Wonders', 'Spice market tour'],
+    bestTime: 'All year; dry season most comfortable',
+  },
+  {
+    slug: 'lake-victoria',
+    name: 'Lake Victoria',
+    region: 'Northwest Tanzania',
+    tagline: "Africa's largest lake and the source of the Nile",
+    description:
+      "The largest lake in Africa and the world's largest tropical lake, shared by Tanzania, Uganda and Kenya. The Tanzanian shore near the Serengeti's western corridor offers fishing villages, island retreats, and bird-rich wetlands.",
+    image: 'https://images.pexels.com/photos/30800484/pexels-photo-30800484.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    facts: [
+      { label: 'Area', value: '68,800 km²' },
+      { label: 'Nile', value: 'Source of the White Nile' },
+      { label: 'Islands', value: 'Rubondo, Ukerewe' },
+      { label: 'Birds', value: 'Papyrus endemics' },
+    ],
+    highlights: ['Rubondo Island National Park', 'Fishing village visits', 'Bird watching wetlands', 'Sunset over the lake'],
+    bestTime: 'June – October; combine with western Serengeti',
+  },
+  {
+    slug: 'mahale-mountains',
+    name: 'Mahale Mountains',
+    region: 'Western Tanzania',
+    tagline: 'Tracking wild chimpanzees on Lake Tanganyika',
+    description:
+      'On the far western shore of Lake Tanganyika, Mahale Mountains National Park protects roughly 1,700 wild chimpanzees. Trek through montane forest to sit with a habituated group — one of the most intimate wildlife experiences on earth.',
+    image: 'https://images.pexels.com/photos/12635318/pexels-photo-12635318.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    facts: [
+      { label: 'Chimps', value: '~1,700' },
+      { label: 'Lake', value: 'Tanganyika' },
+      { label: 'Access', value: 'Boat / fly-in only' },
+      { label: 'Highlight', value: 'Habituated chimp trek' },
+    ],
+    highlights: ['Wild chimpanzee trekking', 'Lake Tanganyika beaches', 'Remote forest camps', 'No roads — arrive by boat'],
+    bestTime: 'May – October for chimp tracking',
+  },
+  {
+    slug: 'arusha-national-park',
+    name: 'Arusha National Park',
+    region: 'Northern Tanzania',
+    tagline: 'A compact gem at the foot of Mount Meru',
+    description:
+      'Often the first stop of a northern safari, Arusha National Park packs Mount Meru, the Momella Lakes, Ngurdoto Crater, and lush rainforest into a small, walkable park — with giraffe, zebra, colobus monkeys and flamingos.',
+    image: 'https://images.pexels.com/photos/30847954/pexels-photo-30847954.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    facts: [
+      { label: 'Area', value: '137 km²' },
+      { label: 'Peak', value: 'Mount Meru 4,562 m' },
+      { label: 'Specialty', value: 'Walking safaris' },
+      { label: 'Primates', value: 'Colobus monkeys' },
+    ],
+    highlights: ['Mount Meru views', 'Walking safaris', 'Momella Lakes flamingos', 'Colobus monkey troops'],
+    bestTime: 'June – October',
+  },
+];
